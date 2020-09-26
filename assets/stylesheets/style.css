@@ -7,7 +7,6 @@
 body {
     background-color: white;
     position: relative;
-    margin: 0 0.5rem 0 0.5rem;
     padding: 0;
   }
 
@@ -78,6 +77,12 @@ body {
     height: 48px;
   }
 
+  .black-menu {
+    background-color: #000;
+    color: #fff;
+    display: none;
+  }  
+
   .banner {
     height: 60px;
     background-color: #FFDD33;
@@ -87,6 +92,11 @@ body {
 
   .banner a { align-self: center; }
 
+  /*-- Main section --*/
+  main {
+    margin: 0 0.5rem 0 0.5rem;
+  }
+  
 
   /*--- Feature News --- */
   .feature-news{
@@ -236,16 +246,22 @@ body {
 /*  second breakpoint: 760px */
 
 @media only screen and ( min-width: 760px ){
+  /* .black-menu { display: flex; } */
+  
+  .black-menu.hide {  display: flex; }
+
   .banner {
     background-color: #f84;
   }
+
 }
 
-
-
-
 /* 1024 desktop */
-  @media only screen and ( min-width: 761px ) and ( min-width: 1024px){
+  @media only screen and (min-width: 1024px){
+    /* .black-menu { display: flex; } */
+
+    .black-menu.hide { display: flex; }
+
     .banner {
       background-color: #f84222;
     }
